@@ -5,3 +5,4 @@ Grupp 12 Projektplan
 3. Har ni uppnåt målen ni har satt för sprint 1?
 4. Inget bifogat gantt-schema
 5. Slänger in engelska ord lite här och där.
+6. Produktbeskrivning bra.
