@@ -1,0 +1,7 @@
+	Grupp 9 - Plandokument
+1. Svårt att öppna dokumenten pga det inte är sparat i pdf.
+2. I översikt av projekt så är syfte och mål nästan samma
+3. Vad är ett tilebaserat RPG?( Produktbeskrivning )
+4. Varför är grovplanen seperat?
+5. Ni kunde ha gjort gantt-schemat i ett program iställe för hand i excel, kunde även ha bifogat den i plandokumentet.
+6. Har ni uppnåt era mål som nu har satt på sprint 1
