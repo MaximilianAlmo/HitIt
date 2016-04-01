@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="HitIt" company="HitIt" webLink="http://" view-date="2016-03-07" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.7.2" locale="sv_SE">
+<?xml version="1.0" encoding="UTF-8"?><project name="HitIt" company="HitIt" webLink="http://" view-date="2016-03-01" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.7.2" locale="sv_SE">
     <description><![CDATA[Socialt nätverk för musiker]]></description>
-    <view zooming-state="default:6" id="gantt-chart">
+    <view zooming-state="default:8" id="gantt-chart">
         <field id="tpd3" name="Namn" width="57" order="0"/>
         <field id="tpd4" name="Startdatum" width="21" order="1"/>
         <field id="tpd5" name="Slutdatum" width="21" order="2"/>
@@ -43,7 +43,9 @@
         </task>
         <task id="16" name="Designdokument" color="#ff3366" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-03-28" duration="12" complete="0" expand="true"/>
         <task id="20" name="Testdokument" color="#ff0033" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-03-29" duration="11" complete="0" expand="true"/>
-        <task id="22" name="Verion1 av Webbapp" color="#3333ff" meeting="false" start="2016-03-28" duration="27" complete="0" expand="true"/>
+        <task id="22" name="Verion1 av Webbapp" color="#3333ff" meeting="false" start="2016-03-28" duration="27" complete="0" expand="true">
+            <notes><![CDATA[Implementering av krav från kravdokumentet i webbappen]]></notes>
+        </task>
         <task id="25" name="SlutVersion" color="#ffff00" meeting="false" start="2016-03-28" duration="41" complete="0" expand="true"/>
     </tasks>
     <resources/>
