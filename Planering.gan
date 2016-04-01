@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="HitIt" company="HitIt" webLink="http://" view-date="2016-03-07" view-index="0" gantt-divider-location="353" resource-divider-location="300" version="2.7.2" locale="sv_SE">
     <description><![CDATA[Socialt nätverk för musiker]]></description>
-    <view zooming-state="default:7" id="gantt-chart">
+    <view zooming-state="default:6" id="gantt-chart">
         <field id="tpd3" name="Namn" width="57" order="0"/>
         <field id="tpd4" name="Startdatum" width="21" order="1"/>
         <field id="tpd5" name="Slutdatum" width="21" order="2"/>
+        <option id="color.recent"><![CDATA[#ffff00 #3300ff #3333ff #ff0033 #ff3366 #66ff66 #6666ff]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Namn" width="56" order="0"/>
-        <field id="1" name="Standard roll" width="43" order="1"/>
+        <field id="0" name="Namn" width="50" order="0"/>
+        <field id="1" name="Standard roll" width="49" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -33,14 +34,17 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Social kontrakt" meeting="false" start="2016-03-07" duration="13" complete="0" expand="true"/>
-        <task id="1" name="Kravdokument" meeting="false" start="2016-03-07" duration="13" complete="0" expand="true"/>
-        <task id="3" name="Plandokument" meeting="false" start="2016-03-07" duration="13" complete="0" expand="true"/>
-        <task id="4" name="Demo implementation" meeting="false" start="2016-03-07" duration="61" complete="0" expand="true">
-            <task id="5" name="Design" meeting="false" start="2016-03-14" duration="12" complete="0" expand="true"/>
-            <task id="8" name="aktivitet_8" meeting="false" start="2016-03-14" duration="12" complete="0" expand="true"/>
-            <task id="9" name="Handledningsmöten dok" meeting="false" start="2016-03-07" duration="61" complete="0" expand="true"/>
+        <task id="0" name="Social kontrakt" color="#ff3366" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-03-07" duration="13" complete="0" expand="true"/>
+        <task id="1" name="Kravdokument" color="#ff3366" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-03-07" duration="13" complete="1" expand="true"/>
+        <task id="3" name="Plandokument" color="#ff3366" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-03-07" duration="13" complete="0" expand="true"/>
+        <task id="10" name="Demo av webbapp" color="#3300ff" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2016-03-14" duration="12" complete="0" priority="2" expand="true"/>
+        <task id="14" name="Fördjupning" color="#66ff66" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2016-03-07" duration="52" complete="0" expand="true">
+            <notes><![CDATA[HTML,CSS,JavaScript,ASP.NET,MVC]]></notes>
         </task>
+        <task id="16" name="Designdokument" color="#ff3366" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-03-28" duration="12" complete="0" expand="true"/>
+        <task id="20" name="Testdokument" color="#ff0033" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2016-03-29" duration="11" complete="0" expand="true"/>
+        <task id="22" name="Verion1 av Webbapp" color="#3333ff" meeting="false" start="2016-03-28" duration="27" complete="0" expand="true"/>
+        <task id="25" name="SlutVersion" color="#ffff00" meeting="false" start="2016-03-28" duration="41" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
@@ -51,12 +55,12 @@
         <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="199" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="198" visible="true"/>
         <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd13" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd4" order="1" width="75" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="75" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="74" visible="true"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
