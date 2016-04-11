@@ -27,7 +27,6 @@
                     @if (Request.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Profile", "Profile", "Home", null, new { @class ="navbar-brand"})</li>
-                        <li>@Html.ActionLink("User Groups", "UserGroups", "Home", null, new { @class = "navbar-brand" })</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")
