@@ -33,7 +33,7 @@ namespace HitIt.Controllers
 
             return View();
         }
-        public ActionResult UserGroups()
+        public ActionResult Collaborations()
         {
             ViewBag.Message = "Your profile page.";
 
