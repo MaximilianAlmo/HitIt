@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="af6947ModelStoreContainer" CdmEntityContainer="af6947Entities">
+    <EntitySetMapping Name="collaboration">
+      <EntityTypeMapping TypeName="af6947Model.collaboration">
+        <MappingFragment StoreEntitySet="collaboration">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name1" ColumnName="name1" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="files" ColumnName="files" />
+          <ScalarProperty Name="owners" ColumnName="owners" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="profile">
+      <EntityTypeMapping TypeName="af6947Model.profile">
+        <MappingFragment StoreEntitySet="profile">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+          <ScalarProperty Name="languages" ColumnName="languages" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="teaser" ColumnName="teaser" />
+          <ScalarProperty Name="about" ColumnName="about" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="talent">
+      <EntityTypeMapping TypeName="af6947Model.talent">
+        <MappingFragment StoreEntitySet="talent">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="equipment" ColumnName="equipment" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="experience" ColumnName="experience" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

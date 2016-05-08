@@ -1,0 +1,346 @@
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll.config
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\HitIt.pdb
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Web.Infrastructure.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Owin.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\WebGrease.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.pdb
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.xml
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.csprojResolveAssemblyReference.cache
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.dll
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.pdb
+C:\Malmö Högskola\Systemutveckling\HitIt Projekt\HitIt\HitIt\bin\Content\Pictures\logga1.1.png
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Content\Pictures\logga1.1.png
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll.config
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.pdb
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Owin.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\WebGrease.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.pdb
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.csprojResolveAssemblyReference.cache
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.dll
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.pdb
+C:\Users\Mohanned\Desktop\HitIt\HitIt Projekt\HitIt\HitIt\bin\MySql.Data.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Content\Pictures\logga1.1.png
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll.config
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.pdb
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\MySql.Data.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Owin.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\WebGrease.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.pdb
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.csprojResolveAssemblyReference.cache
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.dll
+C:\Users\Kalle\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.pdb
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Content\Pictures\logga1.1.png
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll.config
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.pdb
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Web.Infrastructure.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\MySql.Data.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Owin.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\WebGrease.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.pdb
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.csprojResolveAssemblyReference.cache
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.pdb
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Content\Pictures\logga1.1.png
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll.config
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\HitIt.pdb
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\MySql.Data.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Owin.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\WebGrease.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Antlr3.Runtime.pdb
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\EntityFramework.SqlServer.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\Newtonsoft.Json.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Helpers.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Mvc.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Optimization.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.Razor.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\bin\System.Web.WebPages.Razor.xml
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.csprojResolveAssemblyReference.cache
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.dll
+C:\Users\Shervin\Documents\GitHub\HitIt\HitIt Projekt\HitIt\HitIt\obj\Debug\HitIt.pdb
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Content\Pictures\logga1.1.png
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\HitIt.dll.config
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\HitIt.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\HitIt.pdb
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Antlr3.Runtime.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\EntityFramework.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\EntityFramework.SqlServer.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\MySql.Data.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\MySql.Data.Entity.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\MySql.Data.Entity.EF5.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\MySql.Fabric.Plugin.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\MySql.Web.v20.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Newtonsoft.Json.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Owin.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Helpers.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Mvc.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Optimization.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Razor.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.WebPages.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\WebGrease.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Antlr3.Runtime.pdb
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\EntityFramework.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\EntityFramework.SqlServer.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\Newtonsoft.Json.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Helpers.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Mvc.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Optimization.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.Razor.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.WebPages.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\obj\Debug\HitIt.csprojResolveAssemblyReference.cache
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\obj\Debug\HitIt.dll
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\obj\Debug\HitIt.pdb
+C:\Users\Kalle\Documents\Systemutveckling\HitIt testversion\HitIt\bin\MySql.Data.Entity.EF6.dll
