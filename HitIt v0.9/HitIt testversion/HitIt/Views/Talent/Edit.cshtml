@@ -1,0 +1,66 @@
+﻿@model HitIt.Models.talent
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>talent</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.talentid)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.profileid, "profileid", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("profileid", String.Empty)
+                @Html.ValidationMessageFor(model => model.profileid)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.yearsofexperience, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.yearsofexperience)
+                @Html.ValidationMessageFor(model => model.yearsofexperience)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.talentName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.talentName)
+                @Html.ValidationMessageFor(model => model.talentName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.equipment, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.equipment)
+                @Html.ValidationMessageFor(model => model.equipment)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

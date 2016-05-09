@@ -1,0 +1,57 @@
+﻿@model IEnumerable<HitIt.Models.collaborations>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ColName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.colOwner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ColFile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profile.profileName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ColName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.genre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.colOwner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ColFile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.profile.profileName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.colid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.colid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.colid })
+        </td>
+    </tr>
+}
+
+</table>

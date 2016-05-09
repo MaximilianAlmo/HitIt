@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="af6947Model.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="collaborations">
+          <Key>
+            <PropertyRef Name="colid" />
+          </Key>
+          <Property Name="profileId" Type="int" />
+          <Property Name="colid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ColName" Type="varchar" MaxLength="40" />
+          <Property Name="genre" Type="varchar" MaxLength="40" />
+          <Property Name="colOwner" Type="enum" />
+          <Property Name="ColFile" Type="longblob" />
+        </EntityType>
+        <EntityType Name="profile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="profileName" Type="varchar" MaxLength="40" />
+          <Property Name="dateOfBirth" Type="date" />
+          <Property Name="city" Type="varchar" MaxLength="30" />
+          <Property Name="country" Type="varchar" MaxLength="30" />
+          <Property Name="languages" Type="varchar" MaxLength="50" />
+          <Property Name="rating" Type="enum" />
+          <Property Name="about" Type="varchar" MaxLength="100" />
+          <Property Name="picture" Type="mediumblob" />
+          <Property Name="teaser" Type="mediumblob" />
+        </EntityType>
+        <EntityType Name="talent">
+          <Key>
+            <PropertyRef Name="talentid" />
+          </Key>
+          <Property Name="talentid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="profileid" Type="int" />
+          <Property Name="yearsofexperience" Type="int" />
+          <Property Name="talentName" Type="varchar" MaxLength="40" />
+          <Property Name="equipment" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'def.af6947.talentwanted' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="talentwanted">
+          <Property Name="talentkey" Type="int" />
+          <Property Name="colkey" Type="int" />
+          <Property Name="tname" Type="varchar" MaxLength="40" />
+        </EntityType>-->
+        <Association Name="collaborations_ibfk_1">
+          <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
+          <End Role="collaborations" Type="Self.collaborations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="profile">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="collaborations">
+              <PropertyRef Name="profileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="talent_ibfk_1">
+          <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
+          <End Role="talent" Type="Self.talent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="profile">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="talent">
+              <PropertyRef Name="profileid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship, but cannot be found.
+        <Association Name="talentwanted_ibfk_1" />-->
+        <!--Errors Found During Generation:
+error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship, but cannot be found.
+        <Association Name="talentwanted_ibfk_2" />-->
+        <EntityContainer Name="af6947ModelStoreContainer">
+          <EntitySet Name="collaborations" EntityType="Self.collaborations" Schema="af6947" store:Type="Tables" />
+          <EntitySet Name="profile" EntityType="Self.profile" Schema="af6947" store:Type="Tables" />
+          <EntitySet Name="talent" EntityType="Self.talent" Schema="af6947" store:Type="Tables" />
+          <AssociationSet Name="collaborations_ibfk_1" Association="Self.collaborations_ibfk_1">
+            <End Role="profile" EntitySet="profile" />
+            <End Role="collaborations" EntitySet="collaborations" />
+          </AssociationSet>
+          <AssociationSet Name="talent_ibfk_1" Association="Self.talent_ibfk_1">
+            <End Role="profile" EntitySet="profile" />
+            <End Role="talent" EntitySet="talent" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="af6947Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="collaborations">
+          <Key>
+            <PropertyRef Name="colid" />
+          </Key>
+          <Property Name="profileId" Type="Int32" />
+          <Property Name="colid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ColName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="genre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="colOwner" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
+          <Property Name="ColFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="profile" Relationship="Self.collaborations_ibfk_1" FromRole="collaborations" ToRole="profile" />
+        </EntityType>
+        <EntityType Name="profile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="profileName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="dateOfBirth" Type="DateTime" />
+          <Property Name="city" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="languages" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="rating" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
+          <Property Name="about" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="teaser" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="collaborations" Relationship="Self.collaborations_ibfk_1" FromRole="profile" ToRole="collaborations" />
+          <NavigationProperty Name="talent" Relationship="Self.talent_ibfk_1" FromRole="profile" ToRole="talent" />
+        </EntityType>
+        <EntityType Name="talent">
+          <Key>
+            <PropertyRef Name="talentid" />
+          </Key>
+          <Property Name="talentid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="profileid" Type="Int32" />
+          <Property Name="yearsofexperience" Type="Int32" />
+          <Property Name="talentName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="equipment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="profile" Relationship="Self.talent_ibfk_1" FromRole="talent" ToRole="profile" />
+        </EntityType>
+        <Association Name="collaborations_ibfk_1">
+          <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
+          <End Role="collaborations" Type="Self.collaborations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="profile">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="collaborations">
+              <PropertyRef Name="profileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="talent_ibfk_1">
+          <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
+          <End Role="talent" Type="Self.talent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="profile">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="talent">
+              <PropertyRef Name="profileid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="af6947Entities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="collaborations" EntityType="Self.collaborations" />
+          <EntitySet Name="profile" EntityType="Self.profile" />
+          <EntitySet Name="talent" EntityType="Self.talent" />
+          <AssociationSet Name="collaborations_ibfk_1" Association="Self.collaborations_ibfk_1">
+            <End Role="profile" EntitySet="profile" />
+            <End Role="collaborations" EntitySet="collaborations" />
+          </AssociationSet>
+          <AssociationSet Name="talent_ibfk_1" Association="Self.talent_ibfk_1">
+            <End Role="profile" EntitySet="profile" />
+            <End Role="talent" EntitySet="talent" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="af6947ModelStoreContainer" CdmEntityContainer="af6947Entities4">
+          <EntitySetMapping Name="collaborations">
+            <EntityTypeMapping TypeName="af6947Model.collaborations">
+              <MappingFragment StoreEntitySet="collaborations">
+                <ScalarProperty Name="profileId" ColumnName="profileId" />
+                <ScalarProperty Name="colid" ColumnName="colid" />
+                <ScalarProperty Name="ColName" ColumnName="ColName" />
+                <ScalarProperty Name="genre" ColumnName="genre" />
+                <ScalarProperty Name="colOwner" ColumnName="colOwner" />
+                <ScalarProperty Name="ColFile" ColumnName="ColFile" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="profile">
+            <EntityTypeMapping TypeName="af6947Model.profile">
+              <MappingFragment StoreEntitySet="profile">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="profileName" ColumnName="profileName" />
+                <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="languages" ColumnName="languages" />
+                <ScalarProperty Name="rating" ColumnName="rating" />
+                <ScalarProperty Name="about" ColumnName="about" />
+                <ScalarProperty Name="picture" ColumnName="picture" />
+                <ScalarProperty Name="teaser" ColumnName="teaser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="talent">
+            <EntityTypeMapping TypeName="af6947Model.talent">
+              <MappingFragment StoreEntitySet="talent">
+                <ScalarProperty Name="talentid" ColumnName="talentid" />
+                <ScalarProperty Name="profileid" ColumnName="profileid" />
+                <ScalarProperty Name="yearsofexperience" ColumnName="yearsofexperience" />
+                <ScalarProperty Name="talentName" ColumnName="talentName" />
+                <ScalarProperty Name="equipment" ColumnName="equipment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
