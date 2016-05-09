@@ -31,9 +31,9 @@
   </EntityType>
   <EntityType Name="talent">
     <Key>
-      <PropertyRef Name="equipment" />
       <PropertyRef Name="description" />
       <PropertyRef Name="experience" />
+      <PropertyRef Name="equipment" />
     </Key>
     <Property Name="id" Type="Int32" />
     <Property Name="equipment" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
