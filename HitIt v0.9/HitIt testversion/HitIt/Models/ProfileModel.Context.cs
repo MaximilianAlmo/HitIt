@@ -28,5 +28,7 @@ namespace HitIt.Models
         public virtual DbSet<collaborations> collaborations { get; set; }
         public virtual DbSet<profile> profile { get; set; }
         public virtual DbSet<talent> talent { get; set; }
+        public virtual DbSet<collaborationfiles> collaborationfiles { get; set; }
+        public virtual DbSet<talentwanted> talentwanted { get; set; }
     }
 }

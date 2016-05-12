@@ -40,5 +40,23 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="collaborationfiles">
+      <EntityTypeMapping TypeName="af6947Model.collaborationfiles">
+        <MappingFragment StoreEntitySet="collaborationfiles">
+          <ScalarProperty Name="collaborationFile" ColumnName="collaborationFile" />
+          <ScalarProperty Name="collaborationID" ColumnName="collaborationID" />
+          <ScalarProperty Name="collaborationFileId" ColumnName="collaborationFileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="talentwanted">
+      <EntityTypeMapping TypeName="af6947Model.talentwanted">
+        <MappingFragment StoreEntitySet="talentwanted">
+          <ScalarProperty Name="tID" ColumnName="tID" />
+          <ScalarProperty Name="twantedName" ColumnName="twantedName" />
+          <ScalarProperty Name="colkey" ColumnName="colkey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

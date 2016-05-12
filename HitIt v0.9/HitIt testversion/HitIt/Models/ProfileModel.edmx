@@ -4,7 +4,15 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="af6947Model.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="af6947Model.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="collaborationfiles">
+          <Key>
+            <PropertyRef Name="collaborationFileId" />
+          </Key>
+          <Property Name="collaborationFileId" Type="int" Nullable="false" />
+          <Property Name="collaborationID" Type="int" />
+          <Property Name="collaborationFile" Type="mediumblob" />
+        </EntityType>
         <EntityType Name="collaborations">
           <Key>
             <PropertyRef Name="colid" />
@@ -41,13 +49,26 @@
           <Property Name="talentName" Type="varchar" MaxLength="40" />
           <Property Name="equipment" Type="varchar" MaxLength="50" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'def.af6947.talentwanted' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="talentwanted">
-          <Property Name="talentkey" Type="int" />
+          <Key>
+            <PropertyRef Name="twantedName" />
+          </Key>
           <Property Name="colkey" Type="int" />
-          <Property Name="tname" Type="varchar" MaxLength="40" />
-        </EntityType>-->
+          <Property Name="twantedName" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="tID" Type="int" />
+        </EntityType>
+        <Association Name="collaborationfiles_ibfk_1">
+          <End Role="collaborations" Type="Self.collaborations" Multiplicity="0..1" />
+          <End Role="collaborationfiles" Type="Self.collaborationfiles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="collaborations">
+              <PropertyRef Name="colid" />
+            </Principal>
+            <Dependent Role="collaborationfiles">
+              <PropertyRef Name="collaborationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="collaborations_ibfk_1">
           <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
           <End Role="collaborations" Type="Self.collaborations" Multiplicity="*" />
@@ -72,16 +93,40 @@ warning 6013: The table/view 'def.af6947.talentwanted' does not have a primary k
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <!--Errors Found During Generation:
-error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship, but cannot be found.
-        <Association Name="talentwanted_ibfk_1" />-->
-        <!--Errors Found During Generation:
-error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship, but cannot be found.
-        <Association Name="talentwanted_ibfk_2" />-->
+        <Association Name="talentwanted_ibfk_1">
+          <End Role="collaborations" Type="Self.collaborations" Multiplicity="0..1" />
+          <End Role="talentwanted" Type="Self.talentwanted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="collaborations">
+              <PropertyRef Name="colid" />
+            </Principal>
+            <Dependent Role="talentwanted">
+              <PropertyRef Name="colkey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="talentwanted_ibfk_2">
+          <End Role="talent" Type="Self.talent" Multiplicity="0..1" />
+          <End Role="talentwanted" Type="Self.talentwanted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="talent">
+              <PropertyRef Name="talentid" />
+            </Principal>
+            <Dependent Role="talentwanted">
+              <PropertyRef Name="tID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="af6947ModelStoreContainer">
+          <EntitySet Name="collaborationfiles" EntityType="Self.collaborationfiles" Schema="af6947" store:Type="Tables" />
           <EntitySet Name="collaborations" EntityType="Self.collaborations" Schema="af6947" store:Type="Tables" />
           <EntitySet Name="profile" EntityType="Self.profile" Schema="af6947" store:Type="Tables" />
           <EntitySet Name="talent" EntityType="Self.talent" Schema="af6947" store:Type="Tables" />
+          <EntitySet Name="talentwanted" EntityType="Self.talentwanted" Schema="af6947" store:Type="Tables" />
+          <AssociationSet Name="collaborationfiles_ibfk_1" Association="Self.collaborationfiles_ibfk_1">
+            <End Role="collaborations" EntitySet="collaborations" />
+            <End Role="collaborationfiles" EntitySet="collaborationfiles" />
+          </AssociationSet>
           <AssociationSet Name="collaborations_ibfk_1" Association="Self.collaborations_ibfk_1">
             <End Role="profile" EntitySet="profile" />
             <End Role="collaborations" EntitySet="collaborations" />
@@ -90,9 +135,16 @@ error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship,
             <End Role="profile" EntitySet="profile" />
             <End Role="talent" EntitySet="talent" />
           </AssociationSet>
+          <AssociationSet Name="talentwanted_ibfk_1" Association="Self.talentwanted_ibfk_1">
+            <End Role="collaborations" EntitySet="collaborations" />
+            <End Role="talentwanted" EntitySet="talentwanted" />
+          </AssociationSet>
+          <AssociationSet Name="talentwanted_ibfk_2" Association="Self.talentwanted_ibfk_2">
+            <End Role="talent" EntitySet="talent" />
+            <End Role="talentwanted" EntitySet="talentwanted" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="af6947Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -107,6 +159,8 @@ error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship,
           <Property Name="colOwner" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
           <Property Name="ColFile" Type="Binary" MaxLength="Max" FixedLength="false" />
           <NavigationProperty Name="profile" Relationship="Self.collaborations_ibfk_1" FromRole="collaborations" ToRole="profile" />
+          <NavigationProperty Name="collaborationfiles" Relationship="af6947Model.collaborationfiles_ibfk_1" FromRole="collaborations" ToRole="collaborationfiles" />
+          <NavigationProperty Name="talentwanted" Relationship="af6947Model.talentwanted_ibfk_1" FromRole="collaborations" ToRole="talentwanted" />
         </EntityType>
         <EntityType Name="profile">
           <Key>
@@ -135,6 +189,7 @@ error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship,
           <Property Name="talentName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
           <Property Name="equipment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="profile" Relationship="Self.talent_ibfk_1" FromRole="talent" ToRole="profile" />
+          <NavigationProperty Name="talentwanted" Relationship="af6947Model.talentwanted_ibfk_2" FromRole="talent" ToRole="talentwanted" />
         </EntityType>
         <Association Name="collaborations_ibfk_1">
           <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
@@ -172,7 +227,76 @@ error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship,
             <End Role="profile" EntitySet="profile" />
             <End Role="talent" EntitySet="talent" />
           </AssociationSet>
+          <EntitySet Name="collaborationfiles" EntityType="af6947Model.collaborationfiles" />
+          <EntitySet Name="talentwanted" EntityType="af6947Model.talentwanted" />
+          <AssociationSet Name="collaborationfiles_ibfk_1" Association="af6947Model.collaborationfiles_ibfk_1">
+            <End Role="collaborations" EntitySet="collaborations" />
+            <End Role="collaborationfiles" EntitySet="collaborationfiles" />
+          </AssociationSet>
+          <AssociationSet Name="talentwanted_ibfk_1" Association="af6947Model.talentwanted_ibfk_1">
+            <End Role="collaborations" EntitySet="collaborations" />
+            <End Role="talentwanted" EntitySet="talentwanted" />
+          </AssociationSet>
+          <AssociationSet Name="talentwanted_ibfk_2" Association="af6947Model.talentwanted_ibfk_2">
+            <End Role="talent" EntitySet="talent" />
+            <End Role="talentwanted" EntitySet="talentwanted" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="collaborationfiles">
+          <Key>
+            <PropertyRef Name="collaborationFileId" />
+          </Key>
+          <Property Name="collaborationFileId" Type="Int32" Nullable="false" />
+          <Property Name="collaborationID" Type="Int32" />
+          <Property Name="collaborationFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="collaborations" Relationship="af6947Model.collaborationfiles_ibfk_1" FromRole="collaborationfiles" ToRole="collaborations" />
+        </EntityType>
+        <EntityType Name="talentwanted">
+          <Key>
+            <PropertyRef Name="twantedName" />
+          </Key>
+          <Property Name="colkey" Type="Int32" />
+          <Property Name="twantedName" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="tID" Type="Int32" />
+          <NavigationProperty Name="collaborations" Relationship="af6947Model.talentwanted_ibfk_1" FromRole="talentwanted" ToRole="collaborations" />
+          <NavigationProperty Name="talent" Relationship="af6947Model.talentwanted_ibfk_2" FromRole="talentwanted" ToRole="talent" />
+        </EntityType>
+        <Association Name="collaborationfiles_ibfk_1">
+          <End Type="af6947Model.collaborations" Role="collaborations" Multiplicity="0..1" />
+          <End Type="af6947Model.collaborationfiles" Role="collaborationfiles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="collaborations">
+              <PropertyRef Name="colid" />
+            </Principal>
+            <Dependent Role="collaborationfiles">
+              <PropertyRef Name="collaborationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="talentwanted_ibfk_1">
+          <End Type="af6947Model.collaborations" Role="collaborations" Multiplicity="0..1" />
+          <End Type="af6947Model.talentwanted" Role="talentwanted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="collaborations">
+              <PropertyRef Name="colid" />
+            </Principal>
+            <Dependent Role="talentwanted">
+              <PropertyRef Name="colkey" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="talentwanted_ibfk_2">
+          <End Type="af6947Model.talent" Role="talent" Multiplicity="0..1" />
+          <End Type="af6947Model.talentwanted" Role="talentwanted" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="talent">
+              <PropertyRef Name="talentid" />
+            </Principal>
+            <Dependent Role="talentwanted">
+              <PropertyRef Name="tID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -215,6 +339,24 @@ error 6004: The table 'def.af6947.talentwanted' is referenced by a relationship,
                 <ScalarProperty Name="yearsofexperience" ColumnName="yearsofexperience" />
                 <ScalarProperty Name="talentName" ColumnName="talentName" />
                 <ScalarProperty Name="equipment" ColumnName="equipment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="collaborationfiles">
+            <EntityTypeMapping TypeName="af6947Model.collaborationfiles">
+              <MappingFragment StoreEntitySet="collaborationfiles">
+                <ScalarProperty Name="collaborationFile" ColumnName="collaborationFile" />
+                <ScalarProperty Name="collaborationID" ColumnName="collaborationID" />
+                <ScalarProperty Name="collaborationFileId" ColumnName="collaborationFileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="talentwanted">
+            <EntityTypeMapping TypeName="af6947Model.talentwanted">
+              <MappingFragment StoreEntitySet="talentwanted">
+                <ScalarProperty Name="tID" ColumnName="tID" />
+                <ScalarProperty Name="twantedName" ColumnName="twantedName" />
+                <ScalarProperty Name="colkey" ColumnName="colkey" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

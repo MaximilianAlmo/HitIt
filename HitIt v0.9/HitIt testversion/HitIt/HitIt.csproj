@@ -190,6 +190,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CollaborationController.cs" />
+    <Compile Include="Controllers\collaborationfilesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\TalentController.cs" />
@@ -197,6 +198,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\collaborationfiles.cs">
+      <DependentUpon>ProfileModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\collaborations.cs">
       <DependentUpon>ProfileModel.tt</DependentUpon>
     </Compile>
@@ -220,6 +224,9 @@
       <DependentUpon>ProfileModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\talent.cs">
+      <DependentUpon>ProfileModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\talentwanted.cs">
       <DependentUpon>ProfileModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -321,9 +328,15 @@
     <Content Include="Views\Talent\Details.cshtml" />
     <Content Include="Views\Talent\Edit.cshtml" />
     <Content Include="Views\Talent\Index.cshtml" />
+    <Content Include="Views\collaborationfiles\Create.cshtml" />
+    <Content Include="Views\collaborationfiles\Delete.cshtml" />
+    <Content Include="Views\collaborationfiles\Details.cshtml" />
+    <Content Include="Views\collaborationfiles\Edit.cshtml" />
+    <Content Include="Views\collaborationfiles\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Uploadsound\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

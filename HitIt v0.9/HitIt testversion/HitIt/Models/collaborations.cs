@@ -14,6 +14,12 @@ namespace HitIt.Models
     
     public partial class collaborations
     {
+        public collaborations()
+        {
+            this.collaborationfiles = new HashSet<collaborationfiles>();
+            this.talentwanted = new HashSet<talentwanted>();
+        }
+    
         public Nullable<int> profileId { get; set; }
         public int colid { get; set; }
         public string ColName { get; set; }
@@ -22,5 +28,7 @@ namespace HitIt.Models
         public byte[] ColFile { get; set; }
     
         public virtual profile profile { get; set; }
+        public virtual ICollection<collaborationfiles> collaborationfiles { get; set; }
+        public virtual ICollection<talentwanted> talentwanted { get; set; }
     }
 }

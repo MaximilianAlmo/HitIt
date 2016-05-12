@@ -12,20 +12,13 @@ namespace HitIt.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class talent
+    public partial class talentwanted
     {
-        public talent()
-        {
-            this.talentwanted = new HashSet<talentwanted>();
-        }
+        public Nullable<int> colkey { get; set; }
+        public string twantedName { get; set; }
+        public Nullable<int> tID { get; set; }
     
-        public int talentid { get; set; }
-        public Nullable<int> profileid { get; set; }
-        public Nullable<int> yearsofexperience { get; set; }
-        public string talentName { get; set; }
-        public string equipment { get; set; }
-    
-        public virtual profile profile { get; set; }
-        public virtual ICollection<talentwanted> talentwanted { get; set; }
+        public virtual collaborations collaborations { get; set; }
+        public virtual talent talent { get; set; }
     }
 }
