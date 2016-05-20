@@ -1,0 +1,109 @@
+﻿@model IEnumerable<HitIt.Models.profile>
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+
+    {
+        ViewBag.Title = "Your Profile";
+    }
+    <div class="jumbotron" style="background-color:#ae966b">
+        <h2 style="text-align:left">@Html.DisplayName(User.Identity.GetUserName())</h2>
+
+        <div class="jumbotron" style="background-color:#CEBB8E">
+            <h3>@Html.ActionLink("update profile", "index", "profile") </h3>
+            <h3>@Html.ActionLink("update talents", "index", "talent") </h3>
+            <h3>@Html.ActionLink("create collaboration", "index", "collaboration") </h3>
+            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:medium">
+
+                @if (Request.IsAuthenticated && User.Identity.Name == "Max")
+                {
+                <p>
+                    @Html.ActionLink("Create New", "Create")
+                </p>
+                }
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.profileName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.dateOfBirth)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.city)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.country)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.languages)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.rating)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.about)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.picture)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.teaser)
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.profileName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.dateOfBirth)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.city)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.country)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.languages)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.rating)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.about)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.picture)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.teaser)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                                @if (Request.IsAuthenticated && User.Identity.Name == "Max" || User.Identity.Name == "UserNameTest11")
+                                {
+                                    @Html.ActionLink("Details", "Details", new { id = item.id })
+                                }
+                                |
+                                @if (Request.IsAuthenticated && User.Identity.Name == "Max" || User.Identity.Name == "UserNameTest11")
+                                {
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                                }
+
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+}
+else
+{
+    <h1>You need to login to access this page.</h1>
+    <h2>Click @Html.ActionLink("here", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" }) to login.</h2>
+}

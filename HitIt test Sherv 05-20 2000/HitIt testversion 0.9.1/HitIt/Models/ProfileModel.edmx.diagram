@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3d5bedbfb4ef4f3b88a5fa2f09d55218" Name="Diagram1" ZoomLevel="91">
+        <EntityTypeShape EntityType="af6947Model.collaborations" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="af6947Model.profile" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="af6947Model.talent" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="af6947Model.collaborations_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="af6947Model.talent_ibfk_1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="af6947Model.collaborationfiles" Width="1.5" PointX="6" PointY="4.375" />
+        <EntityTypeShape EntityType="af6947Model.talentwanted" Width="1.5" PointX="5.625" PointY="0.875" />
+        <AssociationConnector Association="af6947Model.collaborationfiles_ibfk_1" />
+        <AssociationConnector Association="af6947Model.talentwanted_ibfk_1" />
+        <AssociationConnector Association="af6947Model.talentwanted_ibfk_2" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="af6947Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="collaborations">
+    <Key>
+      <PropertyRef Name="colid" />
+    </Key>
+    <Property Name="profileId" Type="Int32" />
+    <Property Name="colid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ColName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="genre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="colOwner" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
+    <Property Name="ColFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="profile" Relationship="Self.collaborations_ibfk_1" FromRole="collaborations" ToRole="profile" />
+    <NavigationProperty Name="talent" Relationship="Self.talent_ibfk_2" FromRole="collaborations" ToRole="talent" />
+  </EntityType>
+  <EntityType Name="profile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="profileName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="dateOfBirth" Type="DateTime" />
+    <Property Name="city" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="languages" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rating" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
+    <Property Name="about" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="teaser" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="collaborations" Relationship="Self.collaborations_ibfk_1" FromRole="profile" ToRole="collaborations" />
+    <NavigationProperty Name="talent" Relationship="Self.talent_ibfk_1" FromRole="profile" ToRole="talent" />
+  </EntityType>
+  <EntityType Name="talent">
+    <Key>
+      <PropertyRef Name="profileid" />
+      <PropertyRef Name="talentName" />
+      <PropertyRef Name="talentid" />
+    </Key>
+    <Property Name="profileid" Type="Int32" Nullable="false" />
+    <Property Name="talentName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="equipment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="experience" Type="Int16" />
+    <Property Name="helpwanted" Type="Int32" />
+    <NavigationProperty Name="collaborations" Relationship="Self.talent_ibfk_2" FromRole="talent" ToRole="collaborations" />
+    <NavigationProperty Name="profile" Relationship="Self.talent_ibfk_1" FromRole="talent" ToRole="profile" />
+    <Property Name="talentid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="yearsofexperience" Type="Int32" />
+  </EntityType>
+  <Association Name="collaborations_ibfk_1">
+    <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
+    <End Role="collaborations" Type="Self.collaborations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="profile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="collaborations">
+        <PropertyRef Name="profileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="talent_ibfk_2">
+    <End Role="collaborations" Type="Self.collaborations" Multiplicity="0..1" />
+    <End Role="talent" Type="Self.talent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="collaborations">
+        <PropertyRef Name="colid" />
+      </Principal>
+      <Dependent Role="talent">
+        <PropertyRef Name="helpwanted" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="talent_ibfk_1">
+    <End Role="profile" Type="Self.profile" Multiplicity="1" />
+    <End Role="talent" Type="Self.talent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="profile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="talent">
+        <PropertyRef Name="profileid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="af6947Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="collaborations" EntityType="Self.collaborations" />
+    <EntitySet Name="profile" EntityType="Self.profile" />
+    <EntitySet Name="talent" EntityType="Self.talent" />
+    <AssociationSet Name="collaborations_ibfk_1" Association="Self.collaborations_ibfk_1">
+      <End Role="profile" EntitySet="profile" />
+      <End Role="collaborations" EntitySet="collaborations" />
+    </AssociationSet>
+    <AssociationSet Name="talent_ibfk_2" Association="Self.talent_ibfk_2">
+      <End Role="collaborations" EntitySet="collaborations" />
+      <End Role="talent" EntitySet="talent" />
+    </AssociationSet>
+    <AssociationSet Name="talent_ibfk_1" Association="Self.talent_ibfk_1">
+      <End Role="profile" EntitySet="profile" />
+      <End Role="talent" EntitySet="talent" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
