@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="af6947Model.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="af6947Model.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="collaborationfiles">
           <Key>
             <PropertyRef Name="collaborationFileId" />
@@ -38,6 +38,7 @@
           <Property Name="about" Type="varchar" MaxLength="100" />
           <Property Name="picture" Type="mediumblob" />
           <Property Name="teaser" Type="mediumblob" />
+          <Property Name="UserName" Type="varchar" MaxLength="45" Nullable="false" />
         </EntityType>
         <EntityType Name="talent">
           <Key>
@@ -178,6 +179,7 @@
           <Property Name="teaser" Type="Binary" MaxLength="Max" FixedLength="false" />
           <NavigationProperty Name="collaborations" Relationship="Self.collaborations_ibfk_1" FromRole="profile" ToRole="collaborations" />
           <NavigationProperty Name="talent" Relationship="Self.talent_ibfk_1" FromRole="profile" ToRole="talent" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="talent">
           <Key>
@@ -318,6 +320,7 @@
           <EntitySetMapping Name="profile">
             <EntityTypeMapping TypeName="af6947Model.profile">
               <MappingFragment StoreEntitySet="profile">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="profileName" ColumnName="profileName" />
                 <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />

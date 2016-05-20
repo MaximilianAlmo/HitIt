@@ -32,6 +32,7 @@ namespace HitIt.Models
         public string about { get; set; }
         public byte[] picture { get; set; }
         public byte[] teaser { get; set; }
+        public string UserName { get; set; }
     
         public virtual ICollection<collaborations> collaborations { get; set; }
         public virtual ICollection<talent> talent { get; set; }

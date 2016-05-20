@@ -218,3 +218,46 @@ C:\Malmö Högskola\Systemutveckling\HitIt test Sherv\HitIt testversion 0.9.1\Hi
 C:\Malmö Högskola\Systemutveckling\HitIt test Sherv\HitIt testversion 0.9.1\HitIt.Tests\obj\Debug\HitIt.Tests.csprojResolveAssemblyReference.cache
 C:\Malmö Högskola\Systemutveckling\HitIt test Sherv\HitIt testversion 0.9.1\HitIt.Tests\obj\Debug\HitIt.Tests.dll
 C:\Malmö Högskola\Systemutveckling\HitIt test Sherv\HitIt testversion 0.9.1\HitIt.Tests\obj\Debug\HitIt.Tests.pdb
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Content\Pictures\logga1.1.png
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\HitIt.Tests.dll.config
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\HitIt.Tests.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\HitIt.Tests.pdb
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\HitIt.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Razor.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\EntityFramework.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Owin.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\HitIt.pdb
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Razor.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\EntityFramework.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\obj\Debug\HitIt.Tests.csprojResolveAssemblyReference.cache
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\obj\Debug\HitIt.Tests.dll
+C:\Malmö Högskola\Systemutveckling\Projekt\HitIt\HitIt test Sherv 05-20 2000\HitIt testversion 0.9.1\HitIt.Tests\obj\Debug\HitIt.Tests.pdb

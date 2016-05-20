@@ -16,6 +16,7 @@
     <EntitySetMapping Name="profile">
       <EntityTypeMapping TypeName="af6947Model.profile">
         <MappingFragment StoreEntitySet="profile">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="profileName" ColumnName="profileName" />
           <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />

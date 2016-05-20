@@ -30,6 +30,7 @@
     <Property Name="teaser" Type="Binary" MaxLength="Max" FixedLength="false" />
     <NavigationProperty Name="collaborations" Relationship="Self.collaborations_ibfk_1" FromRole="profile" ToRole="collaborations" />
     <NavigationProperty Name="talent" Relationship="Self.talent_ibfk_1" FromRole="profile" ToRole="talent" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="talent">
     <Key>

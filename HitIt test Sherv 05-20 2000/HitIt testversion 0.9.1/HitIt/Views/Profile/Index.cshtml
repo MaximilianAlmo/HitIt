@@ -1,11 +1,12 @@
 ﻿@model IEnumerable<HitIt.Models.profile>
 @using Microsoft.AspNet.Identity
+@using MySql.Data.MySqlClient;
 @if (Request.IsAuthenticated)
-{
-
+{ 
     {
         ViewBag.Title = "Your Profile";
     }
+    
     <div class="jumbotron" style="background-color:#ae966b">
         <h2 style="text-align:left">@Html.DisplayName(User.Identity.GetUserName())</h2>
 
@@ -21,6 +22,7 @@
                     @Html.ActionLink("Create New", "Create")
                 </p>
                 }
+                
                 <table class="table">
                     <tr>
                         <th>
@@ -53,8 +55,20 @@
                         <th></th>
                     </tr>
 
+                    @{
+                    string connectString = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
+                    MySqlConnection connection = new MySqlConnection(connectString);
+                    connection.Open();
+                    MySqlCommand cmd = connection.CreateCommand();
+                    cmd.CommandText = "SELECT id FROM profile WHERE UserName ='" + User.Identity.Name + "'";
+                    Int32 userEdit = (Int32)cmd.ExecuteScalar();
+                    cmd.Parameters.Add("@UserName", userEdit);
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                    }
                     @foreach (var item in Model)
                     {
+                        
                         <tr>
                             <td>
                                 @Html.DisplayFor(modelItem => item.profileName)
@@ -84,7 +98,15 @@
                                 @Html.DisplayFor(modelItem => item.teaser)
                             </td>
                             <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                                @if (User.Identity.Name == "Max")
+                                {
+                                    @Html.ActionLink("Edit", "Edit", new { id =  item.id })    
+                                }
+                                else
+                                {
+                                    @Html.ActionLink("Edit", "Edit", new { id =  userEdit })  
+                                }
+                                  
                                 @if (Request.IsAuthenticated && User.Identity.Name == "Max" || User.Identity.Name == "UserNameTest11")
                                 {
                                     @Html.ActionLink("Details", "Details", new { id = item.id })

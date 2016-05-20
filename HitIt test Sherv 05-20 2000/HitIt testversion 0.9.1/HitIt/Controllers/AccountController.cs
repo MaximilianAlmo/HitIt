@@ -16,7 +16,6 @@ namespace HitIt.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        string AdminCheck;
         public AccountController()
             : this(new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
         {
@@ -50,10 +49,7 @@ namespace HitIt.Controllers
                 var user = await UserManager.FindAsync(model.UserName, model.Password);
                 if (user != null)
                 {
-                    if(User.Identity.Name=="Max")
-                    {
-                        AdminCheck = "AdminOnline";
-                    }
+                    
                     await SignInAsync(user, model.RememberMe);
                     return RedirectToLocal(returnUrl);
                 }

@@ -46,7 +46,7 @@ namespace HitIt.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="id,profileName,dateOfBirth,city,country,languages,rating,about,picture,teaser")] profile profile)
+        public ActionResult Create([Bind(Include="id,profileName,dateOfBirth,city,country,languages,rating,about,picture,teaser,UserName")] profile profile)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace HitIt.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="id,profileName,dateOfBirth,city,country,languages,rating,about,picture,teaser")] profile profile)
+        public ActionResult Edit([Bind(Include="id,profileName,dateOfBirth,city,country,languages,rating,about,picture,teaser,UserName")] profile profile)
         {
             if (ModelState.IsValid)
             {
