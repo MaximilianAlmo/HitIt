@@ -1,0 +1,73 @@
+﻿@model IEnumerable<HitIt.Models.collaborations>
+
+@*@model IEnumerable<HitIt.Models.profile>*@
+@using Microsoft.AspNet.Identity
+@*@using HitIt.Models;*@
+@{
+    ViewBag.Title = "Your Collaboration";
+}
+<div class="jumbotron" style="background-color:#ae966b">
+    <h2 style="text-align:left">@ViewBag.Title</h2>
+
+    <div class="jumbotron" style="background-color:#CEBB8E">
+        <h3>@Html.ActionLink("update profile", "index", "profile") </h3>
+        <h3>@Html.ActionLink("update talents", "index", "talent") </h3>
+        <h3>@Html.ActionLink("create collaboration", "index", "collaboration") </h3>
+        <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:medium">
+
+            @{
+                ViewBag.Title = "Index";
+            }
+
+            <h2>Index</h2>
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ColName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.genre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.colOwner)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ColFile)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.profile.profileName)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ColName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.genre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.colOwner)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ColFile)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.profile.profileName)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.colid }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.colid }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.colid })
+                    </td>
+                </tr>
+            }
+
+        </table>
