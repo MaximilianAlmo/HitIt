@@ -1,0 +1,50 @@
+﻿@model HitIt.Models.talent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>talent</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.yearsofexperience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yearsofexperience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.talentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.talentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.equipment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.equipment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.profile.profileName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.profile.profileName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.talentid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

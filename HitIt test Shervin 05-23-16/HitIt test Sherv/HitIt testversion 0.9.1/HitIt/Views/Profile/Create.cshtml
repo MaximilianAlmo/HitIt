@@ -1,0 +1,111 @@
+﻿@model HitIt.Models.profile
+@if (Request.IsAuthenticated && User.Identity.Name=="Max")
+{
+{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+using (Html.BeginForm()) 
+{
+    Html.AntiForgeryToken();
+    
+    <div class="form-horizontal">
+        <h4>profile</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.profileName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.profileName)
+                @Html.ValidationMessageFor(model => model.profileName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.dateOfBirth, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.dateOfBirth)
+                @Html.ValidationMessageFor(model => model.dateOfBirth)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.city, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.city)
+                @Html.ValidationMessageFor(model => model.city)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.country, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.country)
+                @Html.ValidationMessageFor(model => model.country)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.languages, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.languages)
+                @Html.ValidationMessageFor(model => model.languages)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.rating, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.rating)
+                @Html.ValidationMessageFor(model => model.rating)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.about, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.about)
+                @Html.ValidationMessageFor(model => model.about)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.picture, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.picture)
+                @Html.ValidationMessageFor(model => model.picture)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.teaser, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.teaser)
+                @Html.ValidationMessageFor(model => model.teaser)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+}
+else
+{
+<h2>Sorry!</h2>
+    <h3>You can't access this page!</h3>
+}
