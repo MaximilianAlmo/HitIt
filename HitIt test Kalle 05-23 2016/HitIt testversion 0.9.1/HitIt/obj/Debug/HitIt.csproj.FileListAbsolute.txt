@@ -893,6 +893,5 @@ C:\Users\Shervin\Documents\GitHub\HitIt\HitIt test Kalle 05-23 2016\HitIt testve
 C:\Users\Shervin\Documents\GitHub\HitIt\HitIt test Kalle 05-23 2016\HitIt testversion 0.9.1\HitIt\bin\System.Web.WebPages.xml
 C:\Users\Shervin\Documents\GitHub\HitIt\HitIt test Kalle 05-23 2016\HitIt testversion 0.9.1\HitIt\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Shervin\Documents\GitHub\HitIt\HitIt test Kalle 05-23 2016\HitIt testversion 0.9.1\HitIt\bin\System.Web.WebPages.Razor.xml
-C:\Users\Shervin\Documents\GitHub\HitIt\HitIt test Kalle 05-23 2016\HitIt testversion 0.9.1\HitIt\obj\Debug\HitIt.csprojResolveAssemblyReference.cache
 C:\Users\Shervin\Documents\GitHub\HitIt\HitIt test Kalle 05-23 2016\HitIt testversion 0.9.1\HitIt\obj\Debug\HitIt.dll
 C:\Users\Shervin\Documents\GitHub\HitIt\HitIt test Kalle 05-23 2016\HitIt testversion 0.9.1\HitIt\obj\Debug\HitIt.pdb
