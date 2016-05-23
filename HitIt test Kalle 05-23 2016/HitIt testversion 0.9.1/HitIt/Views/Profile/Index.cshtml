@@ -23,25 +23,18 @@
 
              @*<asp:Image id=""*@
 
-             <img src="@ViewData["path"]" />
-
-             @*@{
+             @{
                  string connectString1 = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
-
                  MySqlConnection connection1 = new MySqlConnection(connectString1);
                  connection1.Open();
                  MySqlCommand cmd1 = connection1.CreateCommand();
                  cmd1.CommandText = "SELECT picturePath FROM profile WHERE UserName ='" + User.Identity.Name + "'";
-                 string userEdit1 = (string)cmd1.ExecuteScalar();
-                 cmd1.Parameters.Add("@picturePath", userEdit1);
+                 string userPicturePath = (string)cmd1.ExecuteScalar();
                  cmd1.ExecuteNonQuery();
                  connection1.Close();
-
-
-               
-
-
-            }*@
+            }
+             <img src="~/Content/Pictures/profilePictures/@userPicturePath" height="120" width="120"  />
+ 
              @*<img src="data:image/png;base64,@Convert.ToBase64String(Model.,0,Model[j].ImageData.Length)" width="100" />*@
          </div>
                 @if (Request.IsAuthenticated && User.Identity.Name == "Max")

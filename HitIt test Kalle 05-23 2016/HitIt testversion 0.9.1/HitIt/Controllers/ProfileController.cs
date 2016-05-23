@@ -50,8 +50,7 @@ namespace HitIt.Controllers
             if (profile.file.ContentLength > 0)
             {
                 var fileName = Path.GetFileName(profile.file.FileName);
-                var path = Path.Combine(Server.MapPath("~/Content/Pictures/profilePictures"), fileName);               
-                profile.file.SaveAs(path);
+
 
                 string connectString = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
                 MySqlConnection connection = new MySqlConnection(connectString);
@@ -61,11 +60,9 @@ namespace HitIt.Controllers
                 Int32 userEdit = (Int32)cmd.ExecuteScalar();
                 cmd.CommandText = "UPDATE profile SET picturePath=@picturePath WHERE UserName ='" + User.Identity.Name + "' AND id ='" + userEdit + "'";
                 cmd.Parameters.Add("@UserName", userEdit);
-                cmd.Parameters.Add("@picturePath", path);
+                cmd.Parameters.Add("@picturePath", fileName);
                 cmd.ExecuteNonQuery();
                 connection.Close();
-
-                ViewData["path"] = path;
                 
 
             }
