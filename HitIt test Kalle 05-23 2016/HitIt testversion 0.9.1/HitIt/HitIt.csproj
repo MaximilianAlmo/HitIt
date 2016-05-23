@@ -243,6 +243,7 @@
     </Content>
     <Content Include="Content\Pictures\logga1.3.png" />
     <Content Include="Content\Pictures\profilePictures\1422292634667.jpg" />
+    <Content Include="Content\Pictures\profilePictures\defaultAvatar.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
