@@ -19,11 +19,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("HitIt", "Index", "Home", null, new { @class = "navbar-brand" })
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class ="navbar-brand"})</li>
+                    <li>@Html.ActionLink("HitIt", "Index", "Home", null, new { @class = "navbar-brand" })</li>
+                    @*<li>@Html.ActionLink("Home", "Index", "Home", null, new { @class ="navbar-brand"})</li>*@
                     <li>@Html.ActionLink("About", "About", "Home", null, new { @class ="navbar-brand"})</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class ="navbar-brand"})</li>
                     @using MySql.Data.MySqlClient;
@@ -43,7 +44,7 @@
                         @*<li>@Html.ActionLink("Profile", "Profile", "Home", null, new { @class ="navbar-brand"})</li>*@
                         if(User.Identity.Name!="Max")
                         { 
-                        <li>@Html.ActionLink("Profile", "index", "profile/Edit/"+userEdit1, null, new { @class = "navbar-brand" })</li>
+                        <li>@Html.ActionLink("Profile", "index", "profile/Details/"+userEdit1, null, new { @class = "navbar-brand" })</li>
                         }
                         if(User.Identity.Name=="Max")
                         {

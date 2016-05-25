@@ -1,0 +1,71 @@
+﻿@model HitIt.Models.HttpPostedFileClass
+@using MySql.Data.MySqlClient;
+
+
+@if (Request.IsAuthenticated)
+{
+    <div class="jumbotron" style="background-color:#ae966b">
+        @{
+    ViewBag.Title = "Profile";
+        }
+
+        <h2>Profile</h2>
+
+        <div>
+
+            @{
+    string connectString1 = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
+    MySqlConnection connection1 = new MySqlConnection(connectString1);
+    connection1.Open();
+    MySqlCommand cmd1 = connection1.CreateCommand();
+    cmd1.CommandText = "SELECT picturePath FROM profile WHERE UserName ='" + User.Identity.Name + "'";
+    string userPicturePath = (string)cmd1.ExecuteScalar();
+    cmd1.ExecuteNonQuery();
+    connection1.Close();
+            }
+            <img src="~/Content/Pictures/profilePictures/@userPicturePath" height="120" width="120" />
+            @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <table>
+                    <tr class="btn btn-default">
+                        @*<td>file</td>*@
+                        <td><input type="file" name="file" id="file" /></td>
+
+                    </tr>
+                    <tr>
+                        @*<td>&nbsp;</td>*@
+                        <td><input type="submit" name="submit" class="btn btn-default" id="Upload" /></td>
+                    </tr>
+
+                </table>
+            }
+            <dl class="dl-horizontal"></dl>
+        </div>
+        <p>
+            @if (Request.IsAuthenticated)
+            {
+                string connectString = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
+                MySqlConnection connection = new MySqlConnection(connectString);
+                connection.Open();
+                MySqlCommand cmd = connection.CreateCommand();
+                cmd.CommandText = "SELECT id FROM profile WHERE UserName ='" + User.Identity.Name + "'";
+                Int32 userEdit1 = (Int32)cmd.ExecuteScalar();
+                cmd.ExecuteNonQuery();
+                connection.Close();
+
+                if (Request.IsAuthenticated)
+                {
+                    <div>
+
+                        <div>
+                            @Html.ActionLink("Back to editing!", "index", "profile/Edit/" + userEdit1, null, new { @class = "btn btn-default" })
+                        </div>
+
+                    </div>
+                }
+             }
+        </p>
+      <div>
+    </div>
+  </div>
+}

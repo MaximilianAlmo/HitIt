@@ -15,12 +15,6 @@
         <h2 style="text-align:left">@Html.DisplayName(User.Identity.GetUserName())</h2>
 
         <div class="jumbotron" style="background-color:#CEBB8E">
-            <h3>@Html.ActionLink("update profile", "index", "profile") </h3>
-            <h3>@Html.ActionLink("update talents", "index", "talent") </h3>
-            <h3>@Html.ActionLink("create collaboration", "index", "collaboration") </h3>
-            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:medium">
-         <div class="dispay-field">
-
              @{
                  string connectString1 = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
                  MySqlConnection connection1 = new MySqlConnection(connectString1);
@@ -32,28 +26,21 @@
                  connection1.Close();
             }
                 <img src="~/Content/Pictures/profilePictures/@userPicturePath" height="120" width="120"  />
+            @*<h3>@Html.ActionLink("update profile", "index", "profile") </h3>
+            <h3>@Html.ActionLink("update talents", "index", "talent") </h3>
+            <h3>@Html.ActionLink("create collaboration", "index", "collaboration") </h3>*@
+            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size:medium">
+         <div class="dispay-field">
+
 
          </div>
-                @if (Request.IsAuthenticated && User.Identity.Name == "Max")
+                @*@if (Request.IsAuthenticated && User.Identity.Name == "Max")
                 {
                 <p>
                     @Html.ActionLink("Create New", "Create")
                 </p>
-                }
-            @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
-            {
-                <table>
-                    <tr>
-                        <td>file</td>
-                        <td><input type="file" name="file" id="file" /></td>
+                }*@
 
-                    </tr>
-                    @*<tr>
-                        <td>&nbsp;</td>
-                        <td><input type="submit" name="submit" id="upload" /></td>
-                    </tr>*@
-                </table>
-            }
            
                 <table class="table">
                     <tr>
@@ -141,23 +128,14 @@
                             <td>
                                 @if (User.Identity.Name == "Max")
                                 {
-                                    @Html.ActionLink("Edit", "Edit", new { id =  item.id })    
+                                    @Html.ActionLink("Edit ", "Edit", new { id =  item.id }) 
+                                    @Html.ActionLink("Details ", "Details", new { id = item.id })
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
                                 }
                                 else
                                 {
                                     @Html.ActionLink("Edit", "Edit", new { id =  userEdit })  
                                 }
-                                  
-                                @if (Request.IsAuthenticated && User.Identity.Name == "Max" || User.Identity.Name == "UserNameTest11")
-                                {
-                                    @Html.ActionLink("Details", "Details", new { id = item.id })
-                                }
-                                |
-                                @if (Request.IsAuthenticated && User.Identity.Name == "Max" || User.Identity.Name == "UserNameTest11")
-                                {
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
-                                }
-
                             </td>
                         </tr>
                     }

@@ -29,21 +29,7 @@
                     connection1.Close();
                 }
                 <img src="~/Content/Pictures/profilePictures/@userPicturePath" height="120" width="120" />
-                @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
-                {
-                    <table>
-                        <tr>
-                            @*<td>file</td>*@
-                            <td><input type="file" name="file" id="file" /></td>
-
-                        </tr>
-                        <tr>
-                    @*<td>&nbsp;</td>*@
-                    <td><input type="submit" name="submit" id="upload" /></td>
-                </tr>
-
-                    </table>
-                }
+               
                 <div class="form-group">    
                     @Html.LabelFor(model => model.profileName, "Profile name" ,new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
@@ -101,7 +87,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.picture, new { @class = "control-label col-md-2" })
+                    @Html.HiddenFor(model => model.picture, new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.EditorFor(model => model.picture)
                         @Html.ValidationMessageFor(model => model.picture)
@@ -109,7 +95,7 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.teaser, new { @class = "control-label col-md-2" })
+                    @Html.HiddenFor(model => model.teaser, new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.EditorFor(model => model.teaser)
                         @Html.ValidationMessageFor(model => model.teaser)
@@ -117,30 +103,40 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+                    @Html.HiddenFor(model => model.UserName, new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
-                        @Html.EditorFor(model => model.UserName)
+                        @Html.HiddenFor(model => model.UserName)
                         @Html.ValidationMessageFor(model => model.UserName)
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    @Html.HiddenFor(model => model.picturePath, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.HiddenFor(model => model.picturePath)
+                        @Html.ValidationMessageFor(model => model.picturePath)
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
                         <input type="submit" value="Save" class="btn btn-default" />
+                            <div>
+                                @Html.ActionLink("Edit your avatar and upload sound!", "Index", "Home/Data", null, new { @class = "btn btn-default" })
+                            </div>
                     </div>
                 </div>
             </div>
         }
 
-        <div>
-            @Html.ActionLink("Back to List", "Index")
-        </div>
 
 
         @section Scripts {
             @Scripts.Render("~/bundles/jqueryval")
         }
-  
+
+    
 </div>
 }
 else

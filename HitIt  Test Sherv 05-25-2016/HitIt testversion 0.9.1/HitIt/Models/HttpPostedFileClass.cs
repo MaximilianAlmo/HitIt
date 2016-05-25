@@ -10,13 +10,6 @@ namespace HitIt.Models
     {
         [Required(ErrorMessage = "Please select file")]
         public HttpPostedFileBase file { get; set; }
-        public profile profile { get; set; }
-
     }   
 
-    public partial class ViewModels
-    {
-        HttpPostedFileClass getSetPicture;
-        profile getSetProfile;
-    }
 }

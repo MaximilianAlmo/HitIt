@@ -338,6 +338,7 @@
     <Content Include="Views\collaborationfiles\Details.cshtml" />
     <Content Include="Views\collaborationfiles\Edit.cshtml" />
     <Content Include="Views\collaborationfiles\Index.cshtml" />
+    <Content Include="Views\Home\Data.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
