@@ -1,0 +1,150 @@
+﻿@model HitIt.Models.profile
+@using MySql.Data.MySqlClient;
+
+@if (Request.IsAuthenticated)
+{
+<div class="jumbotron" style="background-color:#ae966b">
+    @{
+        ViewBag.Title = "Edit";
+    }
+        <h2>Edit</h2>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>profile</h4>
+                <hr />
+                @Html.ValidationSummary(true)
+                @Html.HiddenFor(model => model.id)
+                @{
+                    string connectString1 = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
+                    MySqlConnection connection1 = new MySqlConnection(connectString1);
+                    connection1.Open();
+                    MySqlCommand cmd1 = connection1.CreateCommand();
+                    cmd1.CommandText = "SELECT picturePath FROM profile WHERE UserName ='" + User.Identity.Name + "'";
+                    string userPicturePath = (string)cmd1.ExecuteScalar();
+                    cmd1.ExecuteNonQuery();
+                    connection1.Close();
+                }
+                <img src="~/Content/Pictures/profilePictures/@userPicturePath" height="120" width="120" />
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <table>
+                        <tr>
+                            @*<td>file</td>*@
+                            <td><input type="file" name="file" id="file" /></td>
+
+                        </tr>
+                        <tr>
+                    @*<td>&nbsp;</td>*@
+                    <td><input type="submit" name="submit" id="upload" /></td>
+                </tr>
+
+                    </table>
+                }
+                <div class="form-group">    
+                    @Html.LabelFor(model => model.profileName, "Profile name" ,new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.profileName)
+                        @Html.ValidationMessageFor(model => model.profileName)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.dateOfBirth,"Date of birth" ,new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.dateOfBirth)
+                        @Html.ValidationMessageFor(model => model.dateOfBirth)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.city, "City",new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.city)
+                        @Html.ValidationMessageFor(model => model.city)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.country, "Country",new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.country)
+                        @Html.ValidationMessageFor(model => model.country)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.languages,"Languages", new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.languages)
+                        @Html.ValidationMessageFor(model => model.languages)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.rating,"Rating" ,new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.rating)
+                        @Html.ValidationMessageFor(model => model.rating)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.about, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.about)
+                        @Html.ValidationMessageFor(model => model.about)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.picture, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.picture)
+                        @Html.ValidationMessageFor(model => model.picture)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.teaser, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.teaser)
+                        @Html.ValidationMessageFor(model => model.teaser)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.UserName)
+                        @Html.ValidationMessageFor(model => model.UserName)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+  
+</div>
+}
+else
+{
+    <h1>You need to login to access this page.</h1>
+    <h2>Click @Html.ActionLink("here", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" }) to login.</h2>
+}

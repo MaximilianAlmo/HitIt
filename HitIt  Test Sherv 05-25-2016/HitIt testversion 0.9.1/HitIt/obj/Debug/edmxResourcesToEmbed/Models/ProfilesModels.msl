@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="af6947ModelStoreContainer" CdmEntityContainer="af6947Entities1">
+    <EntitySetMapping Name="collaborations">
+      <EntityTypeMapping TypeName="af6947Model.collaborations">
+        <MappingFragment StoreEntitySet="collaborations">
+          <ScalarProperty Name="profileId" ColumnName="profileId" />
+          <ScalarProperty Name="colid" ColumnName="colid" />
+          <ScalarProperty Name="ColName" ColumnName="ColName" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="colOwner" ColumnName="colOwner" />
+          <ScalarProperty Name="ColFile" ColumnName="ColFile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="profile">
+      <EntityTypeMapping TypeName="af6947Model.profile">
+        <MappingFragment StoreEntitySet="profile">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="profileName" ColumnName="profileName" />
+          <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="languages" ColumnName="languages" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="about" ColumnName="about" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="teaser" ColumnName="teaser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="talent">
+      <EntityTypeMapping TypeName="af6947Model.talent">
+        <MappingFragment StoreEntitySet="talent">
+          <ScalarProperty Name="yearsofexperience" ColumnName="yearsofexperience" />
+          <ScalarProperty Name="talentid" ColumnName="talentid" />
+          <ScalarProperty Name="profileid" ColumnName="profileid" />
+          <ScalarProperty Name="talentName" ColumnName="talentName" />
+          <ScalarProperty Name="equipment" ColumnName="equipment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

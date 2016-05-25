@@ -1,0 +1,75 @@
+﻿@model HitIt.Models.collaborations
+
+<div class="jumbotron" style="background-color:#ae966b">
+    @{
+    ViewBag.Title = "Create";
+    }
+
+    <h2>Create</h2>
+
+
+    @using (Html.BeginForm())
+{
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>collaborations</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.profileId, "Profile Id", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("profileId", String.Empty)
+                    @Html.ValidationMessageFor(model => model.profileId)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ColName,"Collaboration name" ,new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ColName)
+                    @Html.ValidationMessageFor(model => model.ColName)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.genre,"Genre" ,new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.genre)
+                    @Html.ValidationMessageFor(model => model.genre)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.colOwner, "Collaboration owner", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.colOwner)
+                    @Html.ValidationMessageFor(model => model.colOwner)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ColFile, "Collaboration file", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ColFile)
+                    @Html.ValidationMessageFor(model => model.ColFile)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+}
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</div>
