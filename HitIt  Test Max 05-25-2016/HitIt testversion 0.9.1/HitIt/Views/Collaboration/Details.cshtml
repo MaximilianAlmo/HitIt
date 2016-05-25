@@ -1,0 +1,60 @@
+﻿@model HitIt.Models.collaborations
+
+<div class="jumbotron" style="background-color:#ae966b">
+    @{
+    ViewBag.Title = "Details";
+    }
+
+    <h2>Details</h2>
+
+    <div>
+        <h4>collaborations</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ColName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ColName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.genre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.genre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.colOwner)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.colOwner)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ColFile)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ColFile)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.profile.profileName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.profile.profileName)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.colid }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

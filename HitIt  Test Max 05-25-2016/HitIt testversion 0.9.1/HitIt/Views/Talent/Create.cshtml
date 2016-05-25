@@ -1,0 +1,67 @@
+﻿@model HitIt.Models.talent
+
+<div class="jumbotron" style="background-color:#ae966b">
+    @{
+    ViewBag.Title = "Create";
+    }
+
+    <h2>Create</h2>
+
+
+    @using (Html.BeginForm())
+{
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>talent</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.profileid, "profileid", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("profileid", String.Empty)
+                    @Html.ValidationMessageFor(model => model.profileid)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.yearsofexperience, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.yearsofexperience)
+                    @Html.ValidationMessageFor(model => model.yearsofexperience)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.talentName, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.talentName)
+                    @Html.ValidationMessageFor(model => model.talentName)
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.equipment, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.equipment)
+                    @Html.ValidationMessageFor(model => model.equipment)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+}
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+    <div>
