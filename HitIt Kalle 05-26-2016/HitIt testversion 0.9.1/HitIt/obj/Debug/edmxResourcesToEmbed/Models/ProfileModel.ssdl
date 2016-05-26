@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="af6947Model.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="collaborationfiles">
+    <Key>
+      <PropertyRef Name="collaborationFileId" />
+    </Key>
+    <Property Name="collaborationFileId" Type="int" Nullable="false" />
+    <Property Name="collaborationID" Type="int" />
+    <Property Name="collaborationFile" Type="mediumblob" />
+  </EntityType>
+  <EntityType Name="collaborations">
+    <Key>
+      <PropertyRef Name="colid" />
+    </Key>
+    <Property Name="profileId" Type="int" />
+    <Property Name="colid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ColName" Type="varchar" MaxLength="40" />
+    <Property Name="genre" Type="varchar" MaxLength="40" />
+    <Property Name="colOwner" Type="enum" />
+    <Property Name="ColFile" Type="longblob" />
+  </EntityType>
+  <EntityType Name="profile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="profileName" Type="varchar" MaxLength="40" />
+    <Property Name="dateOfBirth" Type="date" />
+    <Property Name="city" Type="varchar" MaxLength="30" />
+    <Property Name="country" Type="varchar" MaxLength="30" />
+    <Property Name="languages" Type="varchar" MaxLength="50" />
+    <Property Name="rating" Type="enum" />
+    <Property Name="about" Type="varchar" MaxLength="100" />
+    <Property Name="picture" Type="mediumblob" />
+    <Property Name="teaser" Type="mediumblob" />
+    <Property Name="UserName" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="picturePath" Type="varchar" MaxLength="500" />
+    <Property Name="teaserPath" Type="varchar" MaxLength="1500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="talent">
+    <Key>
+      <PropertyRef Name="talentid" />
+    </Key>
+    <Property Name="talentid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="profileid" Type="int" />
+    <Property Name="yearsofexperience" Type="int" />
+    <Property Name="talentName" Type="varchar" MaxLength="40" />
+    <Property Name="equipment" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="talentwanted">
+    <Key>
+      <PropertyRef Name="twantedName" />
+    </Key>
+    <Property Name="colkey" Type="int" />
+    <Property Name="twantedName" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="tID" Type="int" />
+  </EntityType>
+  <Association Name="collaborationfiles_ibfk_1">
+    <End Role="collaborations" Type="Self.collaborations" Multiplicity="0..1" />
+    <End Role="collaborationfiles" Type="Self.collaborationfiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="collaborations">
+        <PropertyRef Name="colid" />
+      </Principal>
+      <Dependent Role="collaborationfiles">
+        <PropertyRef Name="collaborationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="collaborations_ibfk_1">
+    <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
+    <End Role="collaborations" Type="Self.collaborations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="profile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="collaborations">
+        <PropertyRef Name="profileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="talent_ibfk_1">
+    <End Role="profile" Type="Self.profile" Multiplicity="0..1" />
+    <End Role="talent" Type="Self.talent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="profile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="talent">
+        <PropertyRef Name="profileid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="talentwanted_ibfk_1">
+    <End Role="collaborations" Type="Self.collaborations" Multiplicity="0..1" />
+    <End Role="talentwanted" Type="Self.talentwanted" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="collaborations">
+        <PropertyRef Name="colid" />
+      </Principal>
+      <Dependent Role="talentwanted">
+        <PropertyRef Name="colkey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="talentwanted_ibfk_2">
+    <End Role="talent" Type="Self.talent" Multiplicity="0..1" />
+    <End Role="talentwanted" Type="Self.talentwanted" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="talent">
+        <PropertyRef Name="talentid" />
+      </Principal>
+      <Dependent Role="talentwanted">
+        <PropertyRef Name="tID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="af6947ModelStoreContainer">
+    <EntitySet Name="collaborationfiles" EntityType="Self.collaborationfiles" Schema="af6947" store:Type="Tables" />
+    <EntitySet Name="collaborations" EntityType="Self.collaborations" Schema="af6947" store:Type="Tables" />
+    <EntitySet Name="profile" EntityType="Self.profile" Schema="af6947" store:Type="Tables" />
+    <EntitySet Name="talent" EntityType="Self.talent" Schema="af6947" store:Type="Tables" />
+    <EntitySet Name="talentwanted" EntityType="Self.talentwanted" Schema="af6947" store:Type="Tables" />
+    <AssociationSet Name="collaborationfiles_ibfk_1" Association="Self.collaborationfiles_ibfk_1">
+      <End Role="collaborations" EntitySet="collaborations" />
+      <End Role="collaborationfiles" EntitySet="collaborationfiles" />
+    </AssociationSet>
+    <AssociationSet Name="collaborations_ibfk_1" Association="Self.collaborations_ibfk_1">
+      <End Role="profile" EntitySet="profile" />
+      <End Role="collaborations" EntitySet="collaborations" />
+    </AssociationSet>
+    <AssociationSet Name="talent_ibfk_1" Association="Self.talent_ibfk_1">
+      <End Role="profile" EntitySet="profile" />
+      <End Role="talent" EntitySet="talent" />
+    </AssociationSet>
+    <AssociationSet Name="talentwanted_ibfk_1" Association="Self.talentwanted_ibfk_1">
+      <End Role="collaborations" EntitySet="collaborations" />
+      <End Role="talentwanted" EntitySet="talentwanted" />
+    </AssociationSet>
+    <AssociationSet Name="talentwanted_ibfk_2" Association="Self.talentwanted_ibfk_2">
+      <End Role="talent" EntitySet="talent" />
+      <End Role="talentwanted" EntitySet="talentwanted" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

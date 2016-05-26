@@ -1,0 +1,57 @@
+﻿@model IEnumerable<HitIt.Models.talent>
+
+<div class="jumbotron" style="background-color:#ae966b">
+    @{
+    ViewBag.Title = "Index";
+    }
+
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                Years of experience
+                @*@Html.DisplayNameFor(model => model.yearsofexperience)*@
+            </th>
+            <th>
+                Talent name
+                @*@Html.DisplayNameFor(model => model.talentName)*@
+            </th>
+            <th>
+                Equipment
+                @*@Html.DisplayNameFor(model => model.equipment)*@
+            </th>
+            <th>
+                Profile name
+                @*@Html.DisplayNameFor(model => model.profile.profileName)*@
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.yearsofexperience)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.talentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.equipment)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.profile.profileName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.talentid }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.talentid }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.talentid })
+                </td>
+            </tr>
+}
+
+    </table>
+    <div>

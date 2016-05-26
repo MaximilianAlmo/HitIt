@@ -1,0 +1,115 @@
+﻿@model HitIt.Models.profile
+    <div class="jumbotron" style="background-color:#ae966b">
+@if (Request.IsAuthenticated && User.Identity.Name == "Max")
+{
+        {
+        ViewBag.Title = "Delete";
+        }
+
+        <h2>Delete</h2>
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>profile</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    Profile Name
+                    @*@Html.DisplayNameFor(model => model.profileName)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.profileName)
+                </dd>
+
+                <dt>
+                    Date of birth
+                    @*@Html.DisplayNameFor(model => model.dateOfBirth)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.dateOfBirth)
+                </dd>
+
+                <dt>
+                    City
+                    @*@Html.DisplayNameFor(model => model.city)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.city)
+                </dd>
+
+                <dt>
+                    Country
+                    @*@Html.DisplayNameFor(model => model.country)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.country)
+                </dd>
+
+                <dt>
+                    Languages
+                    @*@Html.DisplayNameFor(model => model.languages)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.languages)
+                </dd>
+
+                <dt>
+                    Rating
+                    @*@Html.DisplayNameFor(model => model.rating)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.rating)
+                </dd>
+
+                <dt>
+                    About
+                    @*@Html.DisplayNameFor(model => model.about)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.about)
+                </dd>
+
+                <dt>
+                    Picture
+                    @*@Html.DisplayNameFor(model => model.picture)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.picture)
+                </dd>
+
+                <dt>
+                    Teaser
+                    @*@Html.DisplayNameFor(model => model.teaser)*@
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.teaser)
+                </dd>
+
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
+        </div>
+        }
+        else
+        {
+        <h2>You can't access this page!</h2>
+        }
+        </div>

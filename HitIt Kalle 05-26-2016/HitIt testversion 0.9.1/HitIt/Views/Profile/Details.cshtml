@@ -1,0 +1,118 @@
+﻿@model HitIt.Models.profile
+           @using MySql.Data.MySqlClient;
+
+<div class="jumbotron" style="background-color:#ae966b">
+    @{
+    ViewBag.Title = "Profile";
+    }
+
+    <h2>Profile</h2>
+
+    <div>
+
+        <hr />
+        @{
+            string connectString1 = "SERVER= 195.178.232.16; PORT=3306; DATABASE=af6947;UID=af6947 ;PASSWORD=sexyKalle79;";
+            MySqlConnection connection1 = new MySqlConnection(connectString1);
+            connection1.Open();
+            MySqlCommand cmd1 = connection1.CreateCommand();
+            cmd1.CommandText = "SELECT picturePath FROM profile WHERE UserName ='" + User.Identity.Name + "'";
+            string userPicturePath = (string)cmd1.ExecuteScalar();
+            cmd1.CommandText = "SELECT teaserPath FROM profile WHERE UserName ='" + User.Identity.Name + "'";
+            string userTeaserPath = (string)cmd1.ExecuteScalar();
+            cmd1.ExecuteNonQuery();
+            connection1.Close();
+        }
+        <img src="~/Content/Pictures/profilePictures/@userPicturePath" height="120" width="120" />
+        <audio controls="controls">
+            <source src="~/Content/MusicUploads/profileTeasers/@userTeaserPath" type="audio/mpeg">
+        </audio>
+
+
+        <dl class="dl-horizontal">
+            <dt>
+                Profile name
+                @*@Html.DisplayNameFor(model => model.profileName)*@
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.profileName)
+            </dd>
+
+            <dt>
+                Date of birth
+                @*@Html.DisplayNameFor(model => model.dateOfBirth)*@
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.dateOfBirth)
+            </dd>
+
+            <dt>
+                City
+                @*@Html.DisplayNameFor(model => model.city)*@
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.city)
+            </dd>
+
+            <dt>
+                Country
+                @*@Html.DisplayNameFor(model => model.country)*@
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.country)
+            </dd>
+
+            <dt>
+                Languages
+                @*@Html.DisplayNameFor(model => model.languages)*@
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.languages)
+            </dd>
+
+            @*<dt>
+                    @Html.DisplayNameFor(model => model.rating)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.rating)
+                </dd>*@
+
+            <dt>
+                About
+                @*@Html.DisplayNameFor(model => model.about)*@
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.about)
+            </dd>
+
+            @*<dt>
+                    @Html.DisplayNameFor(model => model.picture)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.picture)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.teaser)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.teaser)
+                </dd>*@
+
+        </dl>
+        <h3>Talents @Html.ActionLink("update talents", "index", "talent") </h3>
+    </div>
+    <p >
+        @Html.ActionLink("Edit profile", "Edit", new { id = Model.id }, new { @class = "btn btn-default" })
+        @*@Html.ActionLink("Back to List", "Index")*@
+    </p>
+    </div>
