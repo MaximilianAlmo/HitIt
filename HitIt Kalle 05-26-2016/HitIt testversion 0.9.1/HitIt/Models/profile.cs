@@ -11,6 +11,7 @@ namespace HitIt.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class profile
     {
@@ -22,6 +23,7 @@ namespace HitIt.Models
     
         public int id { get; set; }
         public string profileName { get; set; }
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> dateOfBirth { get; set; }
         public string city { get; set; }
         public string country { get; set; }
